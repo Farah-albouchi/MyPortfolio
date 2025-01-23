@@ -80,7 +80,7 @@ function DrawerAppBar(props) {
               </Button>
             ))}
           </Box>
-          {/* <Button
+          <Button
             href="#contact"
             sx={{
               backgroundColor: 'white',
@@ -100,7 +100,7 @@ function DrawerAppBar(props) {
             }}
           >
             Let's chat
-          </Button> */}
+          </Button>
         </Toolbar>
       </AppBar>
       <nav>

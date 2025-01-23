@@ -12,16 +12,16 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_4igx6fi", 
-        "template_xwme9rd", 
+        "service_4igx6fi",
+        "template_xwme9rd",
         form.current,
-        "uzikqhMrBn8dpEgKy" 
+        "uzikqhMrBn8dpEgKy"
       )
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);
           alert("Your message has been sent successfully!");
-          form.current.reset(); 
+          form.current.reset();
         },
         (error) => {
           console.error("Error sending email:", error.text);
@@ -113,11 +113,12 @@ const ContactMe = () => {
                 "&:hover": {
                   backgroundColor: "#DCCFED",
                 },
-                color: "#ffffff",
+                color: "#000000", 
               }}
             >
               Request Now
             </Button>
+
           </form>
         </div>
       </div>
