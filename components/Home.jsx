@@ -61,7 +61,7 @@ export default function Home() {
               </ShimmerButton>
               <ShimmerButton onClick={handleDownload} shimmerColor='#331C52' background='white' className="shadow-xl  w-56 h-12 ">
                 <button onClick={handleDownload} className="bg-white  text-purple2  font-light sm:text-normal sm:font-medium flex items-center space-x-2">
-                  <span className="text-[#ff00c3] sm:text-lg text-xs">Download CV</span>
+                  <span className="text-pink-500 sm:text-lg text-xs">Download CV</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

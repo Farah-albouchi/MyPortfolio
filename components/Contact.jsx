@@ -101,7 +101,7 @@ const ContactMe = () => {
             </div> */}
             <Button
               type="submit"
-              className="text-[#ff00c3]"
+              className="text-pink-500"
               sx={{
                 fontSize: 20,
                 textTransform: "none",
