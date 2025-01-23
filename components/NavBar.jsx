@@ -24,7 +24,7 @@ const navItems = [
   { text: 'Home', href: 'homepart' },
   { text: 'About Me', href: 'about' },
   { text: 'Services', href: 'services' },
-  { text: 'Portfolio', href: 'portfolio' },
+  { text: 'Projects', href: 'project' },
 
 ];
 
@@ -57,7 +57,7 @@ function DrawerAppBar(props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ 
-    backgroundImage: 'linear-gradient(to left, #dccfed, #cbb1ea, #ba94e6, #a976e0, #9856da, #8946cc, #7a36be, #6b24b0, #5c2498, #4d2280, #401f69, #331c52);', 
+    backgroundImage: 'linear-gradient(90deg, rgba(5,11,43,1) 0%, rgba(36,25,72,1) 24%, rgba(51,28,82,1) 55%, rgba(74,65,97,1) 80%, rgba(144,144,168,1) 100%)', 
     color: 'white',
     boxShadow: 'none' 
   }}>

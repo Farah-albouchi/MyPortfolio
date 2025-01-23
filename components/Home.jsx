@@ -2,7 +2,7 @@ import Image from "next/image";
 import '@/app/globals.css';
 import BoxReveal from "@/components/ui/box-reveal";
 import dynamic from 'next/dynamic';
-import ShineBorder from "@/components/ui/shine-border";
+import {ShineBorder} from "@/components/ui/shine-border";
 
 const ShimmerButton = dynamic(() => import('@/components/ui/shimmer-button'), { ssr: false });
 
@@ -28,7 +28,7 @@ export default function Home() {
     <section
       id="homepart"
       className="home flex flex-col sm:flex-row items-center justify-center min-h-screen "
-      style={{ backgroundImage: 'linear-gradient(to right top, #331c52, #311c4c, #2e1c46, #2c1c40, #291c3a)' }}
+      style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #331c52, #2b1b4d, #241948, #1d1742, #16153d, #101337, #0b0f31, #050b2b);' }}
     >
       <div className="w-2/4 sm:mr-24 flex items-center justify-center">
         <div>
@@ -39,8 +39,13 @@ export default function Home() {
           </BoxReveal>
           <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
             <h1 className="Title my-2 text-white">Hi I’m</h1>
-            <h1 className="Title text-purple2 my-2">Farah Albouchi</h1>
-            <h1 className="Title my-2 text-white">Full Stack Web <span className="text-purple2">&</span> Mobile developer</h1>
+            <h1
+              className="Title my-2 bg-gradient-to-r from-pink-500 via-blue-500 to-red-500 bg-clip-text text-transparent"
+            >
+              Farah Albouchi
+            </h1>
+
+            <h1 className="Title my-2 text-white">Full Stack Web <span className="bg-gradient-to-r from-pink-500 to-blue-500  bg-clip-text text-transparent">&</span> Mobile developer</h1>
             <p className="mt-5 sm:text-lg text-sm font-normal text-purple3">
               Collaborating with highly skilled individuals,
             </p>
@@ -49,22 +54,20 @@ export default function Home() {
             </p>
           </BoxReveal>
           <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
-            <div className="flex mb-14 sm:mb-40 mt-10 lg:justify-start space-x-4">
-              <ShimmerButton shimmerColor='#DCCFED' background='linear-gradient(to left, #dccfed, #cbb1ea, #ba94e6, #a976e0, #9856da, #8946cc, #7a36be, #6b24b0, #5c2498, #4d2280, #401f69, #331c52)' className="shadow-xl w-36 h-12 flex  ">
-                <button className="w-36 h-10 text-white font-light sm:text-normal sm:font-medium"
-                  style={{ backgroundImage: 'linear-gradient(to left, #dccfed, #cbb1ea, #ba94e6, #a976e0, #9856da, #8946cc, #7a36be, #6b24b0, #5c2498, #4d2280, #401f69, #331c52)' }}>
-                  Hire Me!
-                </button>
+            <div className="flex mb-14 sm:mb-40 mt-10 lg:justify-start space-x-2">
+              <ShimmerButton shimmerColor='#DCCFED' background = 'linear-gradient(360deg, #331c52, #321c51, #301b50, #2f1b50, #2e1b4f, #2d1a4e, #2b1a4d, #2a194c, #29194c, #27194b, #26184a, #251849)' className="w-40 h-12   ">
+                Hire Me!
+
               </ShimmerButton>
-              <ShimmerButton onClick={handleDownload}  shimmerColor='#331C52' background='white' className="shadow-xl  w-56 h-12 ">
+              <ShimmerButton onClick={handleDownload} shimmerColor='#331C52' background='white' className="shadow-xl  w-56 h-12 ">
                 <button onClick={handleDownload} className="bg-white  text-purple2  font-light sm:text-normal sm:font-medium flex items-center space-x-2">
-                  <span className="text-customblue sm:text-lg text-xs">Download CV</span>
+                  <span className="text-[#ff00c3] sm:text-lg text-xs">Download CV</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#8121D0"
+                    stroke="#ff00c3"
                     className="size-6"
                   >
                     <path
@@ -81,20 +84,21 @@ export default function Home() {
         </div>
       </div>
       <div className=" flex items-center justify-center">
-      <ShineBorder
-      // borderRadius='300px'
-      className="  w-56 h-56 sm:w-96 sm:h-96 p-28 rounded-full  md:shadow-xl"
-      color={["#D16BA5", "#5FFBF1", "#FFBE7B"]}
-    >
+        <ShineBorder
+          borderRadius = "250"
+          borderWidth={5}
+          className="  w-72 h-72 sm:w-96 sm:h-96 p-28 bg-transparent  rounded-full  md:shadow-xl"
+          color={["#D16BA5", "#5FFBF1", "#FFBE7B"]}
+        >
           <Image
             src="/assets/home_img.png"
             alt="Image Description"
-        
+
             layout="fill"
             objectFit="cover"
-            className="rounded-full p-1 "
+           className=" p-1 rounded-full"
           />
-          </ShineBorder>
+        </ShineBorder>
       </div>
     </section>
   );
