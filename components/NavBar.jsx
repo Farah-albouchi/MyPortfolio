@@ -67,7 +67,7 @@ function DrawerAppBar(props) {
             aria-label="open drawer"
             
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ display: { sm: 'none' } }}
           >
             <MenuIcon style={{color:'white'}} />
           </IconButton>
@@ -80,7 +80,7 @@ function DrawerAppBar(props) {
               </Button>
             ))}
           </Box>
-          <Button
+          {/* <Button
             href="#contact"
             sx={{
               backgroundColor: 'white',
@@ -88,7 +88,7 @@ function DrawerAppBar(props) {
               color: '#331C52',
             //   borderRadius: '50px',
              textTransform :'none',
-              padding: '8px 16px',
+              padding: '8px ',
               '&:hover':{
                 color:'#331C52',
               },
@@ -100,7 +100,7 @@ function DrawerAppBar(props) {
             }}
           >
             Let's chat
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
       <nav>

@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <section
       id="homepart"
-      className="home flex flex-col  md:flex-row items-center justify-center min-h-screen px-6  "
+      className="home flex flex-col  md:flex-row items-center justify-center min-h-screen px-6 w-full  "
       style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #331c52, #2b1b4d, #241948, #1d1742, #16153d, #101337, #0b0f31, #050b2b);' }}
     >
         <div className="w-full sm:w-3/4 lg:w-2/4 flex items-center justify-center sm:mr-12 mt-10 sm:mt-0">
