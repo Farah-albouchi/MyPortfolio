@@ -27,29 +27,29 @@ export default function Home() {
   return (
     <section
       id="homepart"
-      className="home flex flex-col sm:flex-row items-center justify-center min-h-screen "
+      className="home flex flex-col  md:flex-row items-center justify-center min-h-screen px-6  "
       style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #331c52, #2b1b4d, #241948, #1d1742, #16153d, #101337, #0b0f31, #050b2b);' }}
     >
-      <div className="w-2/4 sm:mr-24 flex items-center justify-center">
+        <div className="w-full sm:w-3/4 lg:w-2/4 flex items-center justify-center sm:mr-12 mt-10 sm:mt-0">
         <div>
           <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
-            <h2 className="sm:text-lg text-sm mt-20 sm:mt-40 mb-2 text-purple3">
+          <h2 className="sm:text-lg text-sm mt-10 sm:mt-20 lg:mt-40 mb-2 text-purple3 text-center md:text-left">
               Welcome to my Portfolio
             </h2>
           </BoxReveal>
           <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
-            <h1 className="Title my-2 text-white">Hi I’m</h1>
-            <h1
-              className="Title my-2 bg-gradient-to-r from-pink-500 via-blue-500 to-red-500 bg-clip-text text-transparent"
-            >
+          <h1 className="Title my-2 text-white text-center md:text-left">Hi I’m</h1>
+            <h1 className="Title my-2 bg-gradient-to-r from-pink-500 via-blue-500 to-red-500 bg-clip-text text-transparent text-center md:text-left">
               Farah Albouchi
             </h1>
 
-            <h1 className="Title my-2 text-white">Full Stack Web <span className="bg-gradient-to-r from-pink-500 to-blue-500  bg-clip-text text-transparent">&</span> Mobile developer</h1>
-            <p className="mt-5 sm:text-lg text-sm font-normal text-purple3">
+            <h1 className="Title my-2 text-white text-center md:text-left">
+              Full Stack Web <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">&</span> Mobile Developer
+            </h1>
+            <p className="mt-5 sm:text-lg text-sm font-normal text-purple3 text-center md:text-left">
               Collaborating with highly skilled individuals,
             </p>
-            <p className="mb-5 sm:text-lg text-sm font-normal text-purple3">
+            <p className="mb-5 sm:text-lg text-sm font-normal text-purple3 text-center md:text-left">
               I deliver top-quality services.
             </p>
           </BoxReveal>
@@ -83,7 +83,7 @@ export default function Home() {
           </BoxReveal>
         </div>
       </div>
-      <div className=" flex items-center justify-center">
+      <div className="flex items-center justify-center mt-10 md:mt-0">
         <ShineBorder
           borderRadius = "250"
           borderWidth={5}
@@ -96,7 +96,7 @@ export default function Home() {
 
             layout="fill"
             objectFit="cover"
-           className=" p-1 rounded-full"
+           className=" p-1 rounded-full w-24 h-24 md:w-72 md:h-72 "
           />
         </ShineBorder>
       </div>
