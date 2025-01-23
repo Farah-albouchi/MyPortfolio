@@ -55,11 +55,11 @@ export default function Home() {
           </BoxReveal>
           <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
             <div className="flex mb-14 sm:mb-40 mt-10 lg:justify-start space-x-2">
-              <ShimmerButton shimmerColor='#DCCFED' background = 'linear-gradient(360deg, #331c52, #321c51, #301b50, #2f1b50, #2e1b4f, #2d1a4e, #2b1a4d, #2a194c, #29194c, #27194b, #26184a, #251849)' className="w-40 h-12   ">
+              <ShimmerButton shimmerColor='#DCCFED' background = 'linear-gradient(360deg, #331c52, #321c51, #301b50, #2f1b50, #2e1b4f, #2d1a4e, #2b1a4d, #2a194c, #29194c, #27194b, #26184a, #251849)' className=" w-40 h-12   ">
                 Hire Me!
 
               </ShimmerButton>
-              <ShimmerButton onClick={handleDownload} shimmerColor='#331C52' background='white' className="shadow-xl  w-56 h-12 ">
+              <ShimmerButton onClick={handleDownload} shimmerColor='#331C52' background='white' className="shadow-xl w-36 sm:w-56 h-12 ">
                 <button onClick={handleDownload} className="bg-white  text-purple2  font-light sm:text-normal sm:font-medium flex items-center space-x-2">
                   <span className="text-pink-500 sm:text-lg text-xs">Download CV</span>
                   <svg
@@ -68,7 +68,7 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="#ff00c3"
-                    className="size-6"
+                    className="sm:size-6 size-3"
                   >
                     <path
                       strokeLinecap="round"
