@@ -113,7 +113,7 @@ const ContactMe = () => {
                 "&:hover": {
                   backgroundColor: "#DCCFED",
                 },
-                color: "#000000", 
+                color: "#050b2b", 
               }}
             >
               Request Now

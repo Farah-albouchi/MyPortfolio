@@ -31,7 +31,7 @@ export default function Home() {
       style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #331c52, #2b1b4d, #241948, #1d1742, #16153d, #101337, #0b0f31, #050b2b);' }}
     >
         <div className="w-full sm:w-3/4 lg:w-2/4 flex items-center justify-center sm:mr-12 mt-10 sm:mt-0">
-        <div>
+        <div className="w-full">
           <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
           <h2 className="sm:text-lg text-sm mt-10 sm:mt-20 lg:mt-40 mb-2 text-purple3 text-center md:text-left">
               Welcome to my Portfolio
@@ -53,22 +53,22 @@ export default function Home() {
               I deliver top-quality services.
             </p>
           </BoxReveal>
-          <BoxReveal boxColor={"#DCCFED"} duration={0.5}>
-            <div className="flex mb-14 sm:mb-40 mt-10 lg:justify-start space-x-2">
+          <BoxReveal width="full" boxColor={"#DCCFED"} duration={0.5}>
+            <div className="flex mb-14 sm:mb-40 mt-10 justify-center items-center lg:justify-start space-x-2 w-full">
               <ShimmerButton shimmerColor='#DCCFED' background = 'linear-gradient(360deg, #331c52, #321c51, #301b50, #2f1b50, #2e1b4f, #2d1a4e, #2b1a4d, #2a194c, #29194c, #27194b, #26184a, #251849)' className=" w-40 h-12   ">
                 Hire Me!
 
               </ShimmerButton>
               <ShimmerButton onClick={handleDownload} shimmerColor='#331C52' background='white' className="shadow-xl w-36 sm:w-56 h-12 ">
                 <button onClick={handleDownload} className="bg-white  text-purple2  font-light sm:text-normal sm:font-medium flex items-center space-x-2">
-                  <span className="text-pink-500 sm:text-lg text-xs">Download CV</span>
+                  <span className="text-pink-500 sm:text-lg text-sm font-bold">Download CV</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="#ff00c3"
-                    className="sm:size-6 size-3"
+                    className="sm:size-6 size-5"
                   >
                     <path
                       strokeLinecap="round"
